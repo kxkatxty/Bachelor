@@ -1,0 +1,43 @@
+Topic: ARC – A Retrotransposon-Derived Gene in Neuronal Communication
+
+Core Idea
+
+Study ARC as a domesticated retrotransposon-derived gene that plays a key role in neuronal communication and synaptic plasticity.
+
+Why this topic
+
+* Unique evolutionary origin (derived from Ty3/gypsy retrotransposons)
+* Exists independently in tetrapods and insects (dArc)
+* Strong conceptual link between virology and neuroscience
+
+Key Questions
+
+* What is the evolutionary origin of ARC?
+* How do ARC homologs differ between vertebrates and insects?
+* Which sequence features reflect its retroviral ancestry?
+* How conserved are structural domains responsible for capsid formation?
+
+Biological Context
+
+ARC forms virus-like capsids that can transport mRNA between neurons, suggesting a mechanism similar to viral particle assembly and transfer.
+
+Approach
+
+* Identify ARC homologs across species.
+* Compare vertebrate ARC and insect dARC.
+* Perform phylogenetic analysis
+* Analyze conserved domains and motifs.
+* Optional: structural comparison of capsid-like domains
+
+Why does it fit well?
+
+* Small gene family → manageable
+* Strong evolutionary story
+* Clear structure-function relationship
+* High novelty and “wow factor.”
+
+Risks
+
+* Needs careful selection of homologs
+* Functional interpretation can be complex.
+
