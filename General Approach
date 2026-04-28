@@ -11,14 +11,16 @@ Key Questions
 
 Workflow
 
-1. Identification of homologs across species (BLAST / databases)
-2. Sequence collection and curation
-3. Multiple sequence alignment (MAFFT)
-4. Implementation of a reproducible computational pipeline
-5. Phylogenetic reconstruction (IQ-TREE)
-6. Domain and motif analysis (Pfam / InterPro)
-7. Optional: structural modeling (AlphaFold)
-8. Comparative interpretation across species
+1. Selection of gene or gene family
+2. Identification of homologs across species (BLAST / databases)
+3. Sequence collection and curation
+4. Domain and motif analysis to validate candidate sequences (Pfam / InterPro)
+5. Multiple sequence alignment (MAFFT)
+6. Phylogenetic reconstruction (IQ-TREE)
+7. Synteny analysis of validated genes (SynVoy)
+8. Optional: structural modeling or structure comparison (AlphaFold / Foldseek)
+9. Implementation and documentation of a reproducible computational pipeline
+10. Comparative interpretation across species
 
 Methods Emphasis
 
