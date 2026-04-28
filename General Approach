@@ -1,15 +1,13 @@
 General Approach
 
-Core Idea
-
-Investigate neurobiologically relevant genes or gene families using an integrative approach that combines comparative genomics, evolutionary analysis, and structural/functional interpretation.
+Core Idea: Investigate neurobiologically relevant genes or gene families using an integrative approach that combines comparative genomics, evolutionary analysis, and structural/functional interpretation.
 
 Key Questions
 
-* What is the evolutionary origin of the gene or gene family?
-* How conserved is it across taxa?
-* Are there lineage-specific innovations or duplications?
-* How do structural or sequence features relate to function?
+- What is the evolutionary origin of the gene or gene family?
+- How conserved is it across taxa?
+- Are there lineage-specific innovations or duplications?
+- How do structural or sequence features relate to function?
 
 Workflow
 
@@ -24,62 +22,68 @@ Workflow
 
 Methods Emphasis
 
-* Comparative genomics
-* Phylogenetics
-* Functional inference from sequence and structure
+- Comparative genomics
+- Phylogenetics
+- Functional inference from sequence and structure
 
 Possible Extensions
 
-* Protein embeddings (ProtT5)
-* Structural clustering
-* Functional classification
+- Protein embeddings (ProtT5)
+- Structural clustering
+- Functional classification
 
 Tools
 
-* BLAST / tblastn
-* Ensembl / NCBI Genome Data Viewer
-* MAFFT
-* IQ-TREE
-* Pfam / InterPro
-* AlphaFold (optional)
+- BLAST / tblastn
+- Ensembl / NCBI Genome Data Viewer
+- MAFFT
+- IQ-TREE
+- Pfam / InterPro
+- AlphaFold (optional)
 
 Computational Pipeline
 
 Pipeline Components
+Updated Computational Pipeline
 
-1. Input definition
-  * selected gene or gene family
-  * list of target species
-  * reference protein or gene sequence
-2. Sequence retrieval
-  * automated download from databases where possible
-  * collection of homologous sequences using BLAST or database queries
-  * storage of sequences in FASTA format
-3. Data curation
-  * removal of duplicates
-  * filtering incomplete or low-quality sequences
-  * standardization of sequence names and metadata
-4. Multiple sequence alignment
-  * automated alignment using MAFFT
-  * output in FASTA / Clustal format
-5. Phylogenetic analysis
-  * tree reconstruction using IQ-TREE
-  * bootstrap support calculation
-  * export of tree files for visualization
-6. Domain and motif analysis
-  * domain annotation using Pfam / InterPro / HMMER
-  * extraction of conserved motifs
-  * optional visualization of conserved regions
-7. Optional structural analysis
-  * retrieval of AlphaFold structures where available
-  * optional structure prediction for missing sequences
-  * structural comparison or clustering
-8. Output generation
-  * summary tables
-  * cleaned FASTA files
-  * alignments
-  * phylogenetic trees
-  * figures and plots
+1. Input Definition
+- Gene or gene family
+- UniProt ID (reference)
+- Selected species/genomes
+
+2. Sequence Retrieval
+- Identify homologs using BLAST / UniProt / Ensembl
+- Collect sequences in FASTA format
+
+3. Data Curation & Validation
+- Remove duplicates
+- Filter incomplete sequences
+- Validate sequences using domain analysis (Pfam / InterPro)
+- Ensure sequences correspond to the gene family of interest
+
+4. Multiple Sequence Alignment
+- Perform alignment using MAFFT
+
+5. Phylogenetic Analysis
+- Build phylogenetic tree using IQ-TREE
+- Confirm expected evolutionary relationships
+
+6. Synteny Analysis (SynVoy)
+- Run SynVoy using validated gene (UniProt ID)
+- Compare genomic neighborhoods across species
+- Identify conserved flanking genes and duplications
+- Generate interactive HTML visualization
+
+7. Optional Structural Analysis
+- Retrieve or predict structures (AlphaFold)
+- Compare structural features if relevant
+
+8. Output
+- Curated sequences
+- Alignment
+- Phylogenetic tree
+- SynVoy synteny plot
+- Functional and evolutionary interpretation
 
 Possible Implementation
 
